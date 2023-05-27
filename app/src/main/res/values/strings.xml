@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Shared Preference Tut</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="contact_email">Contact Email</string>
+    <string name="new_contact">New Contact</string>
+    <string name="settings">Settings</string>
+</resources>

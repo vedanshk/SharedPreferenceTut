@@ -77,7 +77,11 @@ public class MainActivity extends AppCompatActivity implements ContactAdapter.Ed
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
 
+        if(id == R.id.action_setting){
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements ContactAdapter.Ed
             contactEmail.setText(contact.getEmail());
         }
 
-        alertBuilder.setCancelable(false)
+        alertBuilder.setCancelable(true)
                 .setPositiveButton(updating ? "Update" : "Save", (dialog, which) -> {
 
 
